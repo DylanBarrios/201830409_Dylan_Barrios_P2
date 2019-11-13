@@ -1,20 +1,13 @@
 package analizador;
 
-import java.io.File;
+/**
+ *
+ * @author dylan
+ */
+public class Matriz {
 
-public class Analizador {
-
-    CargarArchivo ca;
-    public String[] partes = null;
-
-    public void separadorLineas(String archivo) {
-        ca = new CargarArchivo();
-        String separar = archivo;
-        partes = separar.split(" ");
-        for (int i = 0; i <= partes.length-1; i++) {
-            System.out.println(partes[i]);
-        }
-             //Declaramos el array de 6*4
+    public void matriz() {
+        //Declaramos el array de 6*4
         String nuevoArray[][] = new String[6][4];
 
         //Metemos un dato en cada posición
@@ -46,9 +39,6 @@ public class Analizador {
         nuevoArray[5][0] = null;
         nuevoArray[5][1] = null;
         nuevoArray[5][2] = null;
-        nuevoArray[5][3] = null ;
-
+        nuevoArray[5][3] = null;
     }
-    
-       
 }
